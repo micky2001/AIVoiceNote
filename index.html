@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Voice Controlled Notes App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="toolbar">
+  <div id="title"> Rich-text Editor </div>
+  <button id="bold" onclick="makeBold()"> Bold </button>
+  <button id="italic" onclick="makeItalic()"> Italic </button>
+  <button id="underline" onclick="doUnderline()"> Underline </button>
+
+  <button onclick="justifyLeft()"> Justify Left </button>
+  <button onclick="justifyCenter()"> Justify Center </button>
+  <button onclick="justifyRight()"> Justify Right </button>
+
+  <button onclick="doAddImage()"> Add Image </button>
+  
+  <button onclick="doSetTextColor()"> Set Text Color </button>
+</div>
+<div class="col-md-12 col-lg-8">
+<h3 id="recording-instructions">Press Start Recognition</h3>
+<div id="editor" contenteditable="true">Start writing here....</div>
+<button id="start-record-btn" title="Start Recording">Start Recognition</button>
+<button id="pause-record-btn" title="Pause Recording">Pause Recognition</button>
+<button id="save-note-btn" title="Save Note">Save Note</button>
+</div>
+<h3>My Notes</h3>
+ <div class="mynote"></div>
+ <ul id="notes">
+     <li>
+         <p class="no-notes">You don't have any notes.</p>
+     </li>
+ </ul>
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>

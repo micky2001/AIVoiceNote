@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,700,800);
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#title {
+    color: #fff;
+    font: bold 10pt 'Merriweather Sans', sans-serif;
+    margin: 0.5em 16px 0 16px;
+    float: left;
+    clear: none;
+}
+
+#editor {
+    font: 300 10pt 'Merriweather Sans', sans-serif;
+    height: 20em;
+    margin: 8px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+#toolbar {
+    font: 10pt 'Merriweather Sans', sans-serif;
+    background: #00aa33;
+    margin: 0 0 6px 0;
+    padding: 6px;
+}
+
+button {
+    font: 10pt 'Merriweather Sans', sans-serif;
+    background: #00cc55;
+    padding: 6px;
+    border: none;
+    box-shadow: 1px 1px 0 #000;
+    -webkit-box-shadow: 1px 1px 0 #000;
+    -moz-box-shadow: 1px 1px 0 #000;
+}
+
+button:hover {
+    background: #00dd77;
+}
+
+button:active {
+    background: #00aa55;
+    transform: translate( 1px, 1px);
+    -webkit-transform: translate( 1px, 1px);
+    -moz-transform: translate( 1px, 1px);
+    box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+    -moz-box-shadow: 0 0 0;
+}
